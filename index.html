@@ -3,43 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 6 - Holy Grail Layout</title>
+    <title>Lab 6 - Interactive Holy Grail Layout</title>
     <link rel="stylesheet" href="styles.css">
-    <script src= "script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Lab 6: Holy Grail Layout</h1>
+        <img src="pexels-jplenio-1103970.jpg" alt="Website Logo" class="logo">
+        <h1>Welcome to My Interactive Page</h1>
+        <p>Your gateway to learning and fun!</p>
     </header>
+
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">🏠 Home</a></li>
+            <li><a href="#">ℹ️ About</a></li>
+            <li><a href="#">🛠 Services</a></li>
+            <li><a href="#">📞 Contact</a></li>
         </ul>
     </nav>
+
     <main>
         <div class="content">
-            <!-- Interactive JavaScript feature will go here -->
             <h2>Interactive JavaScript Example</h2>
-            <p>Click the button to sort an array of numbers:</p>
-            <button id="sortButton">Sort Numbers</button>
+            <p>Click the button to sort an array of numbers and see the magic happen!</p>
+            <button id="sortButton">✨ Sort Numbers ✨</button>
             <p id="result"></p>
+
+            <!-- Additional Interactive Feature -->
+            <h3>Generate a Random Color</h3>
+            <button id="colorButton">🎨 Generate Color</button>
+            <div id="colorBox" class="color-box"></div>
         </div>
+
         <aside class="ad">
             <a href="https://www.amazon.com" target="_blank">
-                <img src="ad.jpg" alt="Ad Image">
+                <img src="ad.jpg" alt="Product Ad Image">
+                <p>Click to see more details on Amazon!</p>
             </a>
         </aside>
     </main>
+
     <footer>
         <p>Last updated: <span id="lastModified"></span></p>
+        <p>Thank you for visiting our page! Follow us on <a href="#">Twitter</a>, <a href="#">Facebook</a>, and <a href="#">Instagram</a>.</p>
         <script type="text/javascript">
             var x = document.lastModified;
             document.getElementById('lastModified').textContent = x;
         </script>
     </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
