@@ -3,50 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 6 - Interactive Holy Grail Layout</title>
+    <title>ITC505 Lab 6 - Holy Grail Layout</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js></script>
 </head>
 <body>
     <header>
-        <img src="pexels-jplenio-1103970.jpg" alt="Website Logo" class="logo">
-        <h1>Welcome to My Interactive Page</h1>
-        <p>Your gateway to learning and fun!</p>
+        <img src="https://via.placeholder.com/80x80.png?text=Logo" alt="Website Logo" class="logo">
+        <div class="header-text">
+            <h1>Interactive Learning Hub</h1>
+            <p>Engage • Learn • Interact</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">🏠 Home</a></li>
+                <li><a href="#">ℹ️ About</a></li>
+                <li><a href="#">🛠 Services</a></li>
+                <li><a href="#">📞 Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">🏠 Home</a></li>
-            <li><a href="#">ℹ️ About</a></li>
-            <li><a href="#">🛠 Services</a></li>
-            <li><a href="#">📞 Contact</a></li>
-        </ul>
-    </nav>
 
     <main>
         <div class="content">
             <h2>Interactive JavaScript Example</h2>
-            <p>Click the button to sort an array of numbers and see the magic happen!</p>
-            <button id="sortButton">✨ Sort Numbers ✨</button>
+            <p>Enter numbers separated by commas to sort:</p>
+            <input type="text" id="numberInput" placeholder="e.g., 5, 12, 3, 9">
+            <button id="sortButton">🔢 Sort Numbers</button>
             <p id="result"></p>
 
-            <!-- Additional Interactive Feature -->
-            <h3>Generate a Random Color</h3>
+            <h3>Random Color Generator</h3>
             <button id="colorButton">🎨 Generate Color</button>
             <div id="colorBox" class="color-box"></div>
         </div>
 
         <aside class="ad">
             <a href="https://www.amazon.com" target="_blank">
-                <img src="ad.jpg" alt="Product Ad Image">
-                <p>Click to see more details on Amazon!</p>
+                <img src="ad.jpg" alt="Advertisement">
+                <p>Check out this amazing product!</p>
             </a>
         </aside>
     </main>
 
     <footer>
         <p>Last updated: <span id="lastModified"></span></p>
-        <p>Thank you for visiting our page! Follow us on <a href="#">Twitter</a>, <a href="#">Facebook</a>, and <a href="#">Instagram</a>.</p>
+        <p>Connect with us on <a href="#">Twitter</a>, <a href="#">Facebook</a>, and <a href="#">Instagram</a>.</p>
         <script type="text/javascript">
             var x = document.lastModified;
             document.getElementById('lastModified').textContent = x;
